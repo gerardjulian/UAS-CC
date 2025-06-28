@@ -41,7 +41,7 @@ def get_track_info(track_id, token):
 
 @st.cache_data
 def download_data():
-    url = "https://drive.google.com/uc?id=1Ysov4hAioJY7BvKXYd11GQlPpJPVoSR2E"
+    url = "https://drive.google.com/uc?id=1Ysov4hAioJY7BvKXYd11GQlPpJPVoSR2"
     out = "SpotifyFeatures.csv"
     if not os.path.exists(out):
         gdown.download(url, out, quiet=False)
